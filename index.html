@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Elmendorp Tours &amp; Travel · Safari, Maasai culture and the Kenyan coast</title>
+<meta name="description" content="Game drives in the Maasai Mara by Land Cruiser or party bus, an afternoon with the Maasai, the reef and dhows of Malindi and Mombasa, and tours all over Kenya.">
+<meta name="theme-color" content="#0d1710">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Elmendorp Tours &amp; Travel">
+<meta property="og:description" content="Travel in style, or travel by party bus: Maasai Mara, Maasai culture, the Kenyan coast and tours all over Kenya.">
+<meta property="og:image" content="assets/media/safari-wide.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/archivo-wdth.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/media/safari-wide.jpg" as="image" media="(min-aspect-ratio: 9/10)">
+<link rel="preload" href="assets/media/safari-tall.jpg" as="image" media="(max-aspect-ratio: 9/10)">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#tours">Skip to the tours</a>
+
+<header class="top" id="top">
+  <a class="brand" href="#safari" data-chapter="0" aria-label="Elmendorp Tours and Travel, back to the start">
+    <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="bt"><b>ELMENDORP</b><small>Tours &amp; Travel · Kenya</small></span>
+  </a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#tours">Tours</a>
+    <a href="#fleet">Fleet</a>
+    <a href="#book">Book</a>
+  </nav>
+  <div class="actions">
+    <a class="btn wa" id="wa" href="#" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg><span>WhatsApp</span></a>
+    <a class="btn" href="#book">Book a ride</a>
+  </div>
+</header>
+
+<section class="hero" id="hero" aria-label="Safari, Maasai and coast films">
+  <div class="pin" id="pin">
+    <div class="layers" id="layers" aria-hidden="true"></div>
+    <div class="scrim"></div>
+    <div id="copies"></div>
+    <div class="hint" id="hint" aria-hidden="true"><span>Scroll</span><i></i></div>
+    <button class="tap" id="tap" type="button" hidden><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2l10 6-10 6z"/></svg>Play the films</button>
+    <div class="bottom" id="bottom">
+      <ol class="prog" id="prog" aria-label="Chapters"></ol>
+      <div class="right"><span id="coord"></span><b id="idx"></b></div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="band tours" id="tours" aria-labelledby="tours-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker">Where we go</p>
+          <h2 class="h2" id="tours-h">Ten places in Kenya</h2>
+        </div>
+        <p class="intro">Tap a place to book it. Join a few together, or tell us your own route and we will plan it.</p>
+      </div>
+      <ul class="tiles" id="tourList"></ul>
+    </div>
+  </section>
+
+  <section class="band fleet" id="fleet" aria-labelledby="fleet-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker">Fleet</p>
+          <h2 class="h2" id="fleet-h">Two ways to ride</h2>
+        </div>
+        <p class="intro">Every trip comes with a driver-guide who knows the roads, the parks and where the animals were seen this morning.</p>
+      </div>
+      <div class="rides">
+        <article class="ride" style="--c:var(--gold)">
+          <video class="ride-v" src="assets/media/fleet-cruiser.mp4" poster="assets/media/fleet-cruiser.jpg" width="960" height="640" muted loop playsinline preload="none" aria-label="The grey Land Cruiser with its pop-up roof on a game drive across the Maasai Mara, dust rising behind it"></video>
+          <div class="ride-b">
+            <p class="sub">Travel in style</p>
+            <h3>Toyota Land Cruiser</h3>
+            <ul>
+              <li>Pop-up roof for game viewing</li>
+              <li>Seven window seats</li>
+              <li>Charging points and a cool box</li>
+              <li>Built for murram roads</li>
+            </ul>
+            <button class="btn" type="button" data-ride="Land Cruiser">Book the Land Cruiser</button>
+          </div>
+        </article>
+        <article class="ride" style="--c:var(--party)">
+          <video class="ride-v" src="assets/media/fleet-nganya.mp4" poster="assets/media/fleet-nganya.jpg" width="960" height="640" muted loop playsinline preload="none" aria-label="The Baba Yaga nganya, covered in John Wick murals, driving through the Maasai Mara grass with dust behind it"></video>
+          <div class="ride-b">
+            <p class="sub">Or travel loud</p>
+            <h3>The nganya party bus</h3>
+            <ul>
+              <li>Hand-painted murals and LED lights</li>
+              <li>Club sound system and screens</li>
+              <li>Room for the whole group</li>
+              <li>Weddings, birthdays, school trips</li>
+            </ul>
+            <button class="btn" type="button" data-ride="Party bus">Book the party bus</button>
+          </div>
+        </article>
+      </div>
+      <p class="note">Either ride can be hired on its own, with a driver, by the day.</p>
+    </div>
+  </section>
+
+  <section class="band book" id="book" aria-labelledby="book-h">
+    <div class="wrap book-grid">
+      <div>
+        <p class="kicker">Book a ride</p>
+        <h2 class="h2" id="book-h">Tell us where you want to go</h2>
+        <p class="intro">Send the trip, the dates and how many of you there are. We reply on WhatsApp with a plan and a price.</p>
+        <ul class="contact" id="contact"></ul>
+      </div>
+      <form class="form" id="enq" novalidate>
+        <div class="full"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name"></div>
+        <div class="full"><label for="f-phone">WhatsApp or phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+254"></div>
+        <div class="full"><label for="f-trip">Trip</label><select id="f-trip" name="trip"></select></div>
+        <div><label for="f-ride">Ride</label><select id="f-ride" name="ride"><option>Land Cruiser</option><option>Party bus</option><option>Either</option></select></div>
+        <div><label for="f-group">People</label><input id="f-group" name="group" type="number" min="1" max="60" value="2" inputmode="numeric"></div>
+        <div class="full"><p class="lab" id="cal-l">When</p><div class="cal" id="cal" role="group" aria-labelledby="cal-l"></div></div>
+        <div class="full"><label for="f-note">Anything else</label><textarea id="f-note" name="note" placeholder="Hotel pick-up, children's ages, a birthday on the bus…"></textarea></div>
+        <button class="send" type="submit">Send request</button>
+        <p class="status" id="status" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="#safari" data-chapter="0" aria-label="Elmendorp Tours and Travel, back to the start">
+      <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="bt"><b>ELMENDORP</b><small>Tours &amp; Travel · Kenya</small></span>
+    </a>
+    <nav aria-label="Footer"><a href="#tours">Tours</a><a href="#fleet">Fleet</a><a href="#book">Book</a></nav>
+    <p>The films are 3D renders made for Elmendorp Tours &amp; Travel, with photos of the real Land Cruiser and Baba Yaga nganya.</p>
+  </div>
+</footer>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
