@@ -30,7 +30,7 @@ window.SITE = {
         posterTall: 'assets/media/safari-tall.jpg'
       },
       beats: [
-        { at: 0, title: ['Travel', 'in style'], text: 'Game drives in a Toyota Land Cruiser with a pop-up roof, so every seat gets a clear view of the plains.' },
+        { at: 0, title: ['Tour Kenya', 'in style'], text: 'Game drives in a Toyota Land Cruiser with a pop-up roof, so every seat gets a clear view of the plains.' },
         { at: 5.6, title: ['Or by', 'party bus'], text: 'The nganya is a Nairobi matatu with hand-painted murals, LED lights and a sound system made for the long road.',
           eyebrow: 'Nairobi CBD · Party bus', coord: '1°17′S 36°49′E', where: 'Nairobi' }
       ]

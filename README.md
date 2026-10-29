@@ -2,9 +2,9 @@
 
 A one-page website for a Kenyan tour company. It opens with three full-screen films that change as you scroll down:
 
-1. **Safari** · the real Land Cruiser on a murram track in the Maasai Mara ("Travel in style"), then the Baba Yaga nganya on a street in Nairobi's CBD, with the KICC behind it ("Or by party bus")
+1. **Safari** · the real Land Cruiser on a murram track in the Maasai Mara ("Tour Kenya in style"), then the Baba Yaga nganya on a street in Nairobi's CBD, with the KICC behind it ("Or by party bus")
 2. **Maasai** · warriors doing the adumu jumping dance at sunset
-3. **Coast** · the turquoise lagoon at Malindi, with the reef, palms and a dhow under sail ("End at the ocean" / "And much more")
+3. **Coast** · the turquoise lagoon at Malindi from the air: a busy beach with umbrellas, swimmers and kayaks, fishing outriggers and dhows on the water, the reef behind ("End at the ocean" / "And much more")
 
 One swipe on a phone, one notch of the mouse wheel or one press of the arrow keys moves on one film: the next one rises up over the last and the page settles on it. Swiping back down goes back a film. After the third film, the list of ten places slides up over it, and from there the page scrolls normally through the places, the fleet, a booking form with a calendar that opens WhatsApp, and the footer. The films loop on their own; there is no pause button.
 
@@ -39,6 +39,10 @@ Everything you are likely to edit is in **`assets/js/content.js`**:
 - `rides`: extra choices at the end of the form's trip list (ride hire, transfers).
 
 The fleet section (the two vehicles) is written directly in `index.html`; search for `id="fleet"`.
+
+## The chatbot
+
+The Chatling chatbot (chatbot ID `8782912579`) is added at the bottom of `index.html`, under the comment `Chatling chatbot`. Its greeting, colours, answers and the position of the chat bubble are all set in your Chatling dashboard, not in these files. The `has-chat` line next to it moves the film labels in the bottom-right corner aside so the bubble does not cover them; if you move the bubble to another corner in Chatling, or remove the chatbot, delete that line too. The chatbot loads from chatling.ai, so it only appears when the page is online (on GitHub Pages, or on your computer with an internet connection).
 
 ## Use your own footage
 
@@ -105,6 +109,6 @@ assets/fonts/              Archivo and IBM Plex Mono, served from this site (SIL
 ## Credits and notes
 
 - The films and the place pictures were rendered for this site with Blender's Cycles path tracer: the landscapes, animals, people and boats were all modelled for it, and no stock footage is used.
-- The Land Cruiser and the nganya in the first film and the fleet clips are photographs of the real vehicles, cut out and placed into the 3D scenes frame by frame (rolling wheels, shadows and the dark underside that keeps them on the ground): the Land Cruiser on a game drive in the Mara, the nganya in Nairobi's CBD. The photos are not ours: the Land Cruiser is from JaeTravel Expeditions and the "Baba Yaga" nganya from a YouTube video. Get the owners' permission before the site goes live, or send photos of your own vehicles to have them swapped in.
+- The Land Cruiser and the nganya in the first film and the fleet clips are photographs of the real vehicles, cut out and placed into the 3D scenes frame by frame (rolling wheels, shadows and the dark underside that keeps them on the ground): the Land Cruiser on a game drive in the Mara, the nganya in Nairobi's CBD. The nganya's wheels are rendered bronze rims rather than the photo's, so they can turn without their lighting turning with them. The photos are not ours: the Land Cruiser is from JaeTravel Expeditions and the "Baba Yaga" nganya from a YouTube video. Get the owners' permission before the site goes live, or send photos of your own vehicles to have them swapped in.
 - The place descriptions are written for this site. Lengths are typical; check them, and add prices if you want them on the page.
 - Fonts: [Archivo](https://fonts.google.com/specimen/Archivo) by Omnibus-Type and [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) by IBM, both under the SIL Open Font License 1.1.
