@@ -76,8 +76,15 @@
       '<p class="lede">' + esc(B.text) + '</p>' +
       '<div class="ctas"><a class="go" href="#tours"><span>' + esc(c.cta) + '</span><b aria-hidden="true">&darr;</b></a></div>';
     $('#copies').appendChild(a);
-    return { el: a, h: a.querySelector('.h'), lede: a.querySelector('.lede'), beat: 0, last: {} };
+    return { el: a, h: a.querySelector('.h'), lede: a.querySelector('.lede'), eb: a.querySelector('.eyebrow span'), beat: 0, last: {} };
   });
+  /* place line bottom right: a beat can move the film somewhere else (the party bus is in Nairobi, not the Mara) */
+  function placeLabels(k) {
+    if (k !== lastActive) return;
+    var B = CH[k].beats[copies[k].beat] || {};
+    $('#coord').textContent = B.coord || CH[k].coord || '';
+    $('#idx').textContent = B.where || CH[k].where || '';
+  }
 
   $('#prog').innerHTML = CH.map(function (c, k) {
     return '<li><button type="button" data-chapter="' + k + '"><span class="lb"><em>0' + (k + 1) + '</em>' + esc(c.label) + '</span><span class="bar"><i></i></span></button></li>';
@@ -95,11 +102,13 @@
     C.beat = b;
     var el = C.el;
     clearTimeout(el._t);
-    if (reduce) { C.h.innerHTML = lines(beats[b].title); C.lede.textContent = beats[b].text; return; }
+    placeLabels(k);
+    if (reduce) { C.h.innerHTML = lines(beats[b].title); C.lede.textContent = beats[b].text; C.eb.textContent = beats[b].eyebrow || CH[k].eyebrow; return; }
     el.classList.add('out');
     el._t = setTimeout(function () {
       C.h.innerHTML = lines(beats[b].title);
       C.lede.textContent = beats[b].text;
+      C.eb.textContent = beats[b].eyebrow || CH[k].eyebrow;
       el.classList.remove('out');
       el.classList.add('pre');
       void el.offsetWidth;
@@ -200,8 +209,7 @@
       lastActive = active;
       items.forEach(function (li, k) { if (k === active) li.setAttribute('aria-current', 'step'); else li.removeAttribute('aria-current'); });
       document.documentElement.style.setProperty('--accent', CH[active].accent || '#f2b134');
-      $('#coord').textContent = CH[active].coord || '';
-      $('#idx').textContent = CH[active].where || '';
+      placeLabels(active);
       document.body.dataset.chapter = active;
       warm(active);
     }

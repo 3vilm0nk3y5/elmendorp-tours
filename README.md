@@ -2,7 +2,7 @@
 
 A one-page website for a Kenyan tour company. It opens with three full-screen films that change as you scroll down:
 
-1. **Safari** · the real Land Cruiser and the Baba Yaga nganya on a murram track in the Maasai Mara ("Travel in style" / "Or by party bus")
+1. **Safari** · the real Land Cruiser on a murram track in the Maasai Mara ("Travel in style"), then the Baba Yaga nganya on a street in Nairobi's CBD, with the KICC behind it ("Or by party bus")
 2. **Maasai** · warriors doing the adumu jumping dance at sunset
 3. **Coast** · the turquoise lagoon at Malindi, with the reef, palms and a dhow under sail ("End at the ocean" / "And much more")
 
@@ -53,7 +53,7 @@ The films in `assets/media/` are original 3D renders. Real drone footage of your
 
 Each clip has a poster image with the same name ending in `.jpg`; it shows while the video loads, so it should be the clip's first frame.
 
-The fleet section plays two short clips cut from the safari film: `assets/media/fleet-cruiser.mp4` and `assets/media/fleet-nganya.mp4` (960 × 640, with `.jpg` posters). They only load and play while the fleet is on screen.
+The fleet section plays two short clips cut from the first film: `assets/media/fleet-cruiser.mp4` and `assets/media/fleet-nganya.mp4` (960 × 640, with `.jpg` posters). They only load and play while the fleet is on screen.
 
 The ten place pictures are in `assets/img/places/` (640 × 480 JPEGs, shown at 4:3). Replace any of them with your own photo under the same name.
 
@@ -105,6 +105,6 @@ assets/fonts/              Archivo and IBM Plex Mono, served from this site (SIL
 ## Credits and notes
 
 - The films and the place pictures were rendered for this site with Blender's Cycles path tracer: the landscapes, animals, people and boats were all modelled for it, and no stock footage is used.
-- The Land Cruiser and the nganya in the safari film and the fleet clips are photographs of the real vehicles, cut out and placed on the 3D vehicles frame by frame (rolling wheels, shadows, dust in front). The photos are not ours: the Land Cruiser is from JaeTravel Expeditions and the "Baba Yaga" nganya from a YouTube video. Get the owners' permission before the site goes live, or send photos of your own vehicles to have them swapped in.
+- The Land Cruiser and the nganya in the first film and the fleet clips are photographs of the real vehicles, cut out and placed into the 3D scenes frame by frame (rolling wheels, shadows and the dark underside that keeps them on the ground): the Land Cruiser on a game drive in the Mara, the nganya in Nairobi's CBD. The photos are not ours: the Land Cruiser is from JaeTravel Expeditions and the "Baba Yaga" nganya from a YouTube video. Get the owners' permission before the site goes live, or send photos of your own vehicles to have them swapped in.
 - The place descriptions are written for this site. Lengths are typical; check them, and add prices if you want them on the page.
 - Fonts: [Archivo](https://fonts.google.com/specimen/Archivo) by Omnibus-Type and [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) by IBM, both under the SIL Open Font License 1.1.

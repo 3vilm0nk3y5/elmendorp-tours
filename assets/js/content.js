@@ -5,6 +5,7 @@
   Each chapter plays one looping video: "wide" on laptops and landscape screens, "tall" on phones held upright.
   To use your own footage, drop an MP4 into assets/media/ and point the path here (H.264, 1920x1080 / 1080x1920).
   "beats" are headlines that change while a chapter's video plays: "at" is the second in the video where it switches.
+  A beat can also give its own "eyebrow", "coord" and "where" when that part of the film is somewhere else.
 */
 window.SITE = {
   name: 'Elmendorp Tours & Travel',
@@ -30,7 +31,8 @@ window.SITE = {
       },
       beats: [
         { at: 0, title: ['Travel', 'in style'], text: 'Game drives in a Toyota Land Cruiser with a pop-up roof, so every seat gets a clear view of the plains.' },
-        { at: 5.6, title: ['Or by', 'party bus'], text: 'The nganya is a Nairobi matatu with hand-painted murals, LED lights and a sound system made for the long road.' }
+        { at: 5.6, title: ['Or by', 'party bus'], text: 'The nganya is a Nairobi matatu with hand-painted murals, LED lights and a sound system made for the long road.',
+          eyebrow: 'Nairobi CBD · Party bus', coord: '1°17′S 36°49′E', where: 'Nairobi' }
       ]
     },
     {
